@@ -9,7 +9,17 @@ BERT+ 알고리즘을 이용한 약물 리뷰 분석
 
 celecoxib.csv, naproxen.csv, ibuprofen.csv: drugs.com, everydayhealth.com, askapatient.com, iodine.com, webmd.com에서 수집한 약물 리뷰 데이터.
 
+terms.txt: 사전기반 방식에서 사용된 MedDRA 용어
+
+test.txt: 개체명 인식 모델의 훈련 데이터인 CADEC 데이터로 단어와 태그 형식으로 되어있음
+
 BERT+.ipynb: 코드의 구성은 다음과 같다.
 - BERT 모델 훈련
 - BERT를 통한 celecoxib, naproxen, ibuprofen 감성 분석 (BERT+와의 비교를 위해)
 - BERT+를 통한 celecoxib, naproxen, ibuprofen 감성 분석
+
+dictionary_based_method.ipynb: 사전 기반 방식의 약물 부작용 탐지 코드
+
+NER_based_method.ipynb: 코드의 구성은 다음과 같다.
+- CADEC 데이터를 활용해 개체명 인식 기반의 약물 부작용 탐지 모델 구축
+- 구축한 모델에 celecoxib, naproxen, ibuprofen의 리뷰를 적용해 약물 부작용 표현 
