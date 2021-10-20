@@ -5,6 +5,7 @@ BERT+ 알고리즘을 이용한 약물 리뷰 분석
 제안하는 BERT+ 알고리즘은 기존의 BERT 알고리즘으로 분류되기 어려운 중립에 가까운 리뷰나 약물 이상 반응 용어가 증상으로 사용된 경우 등도 효율적으로 판별할 수 있다.
 
 1116label.csv: BERT 알고리즘 훈련에 사용된 데이터. KUC Hackathon 데이터 중 평점이 1~2점인 데이터와 10점인 데이터의 일부를 사용
+
 celecoxib.csv, naproxen.csv, ibuprofen.csv: drugs.com, everydayhealth.com, askapatient.com, iodine.com, webmd.com에서 수집한 약물 리뷰 데이터.
 
 BERT+.ipynb: 코드의 구성은 다음과 같다.
